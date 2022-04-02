@@ -11,6 +11,7 @@
     display: flex;
     margin: 3rem;
     gap: 2rem;
+    overflow: hidden;
 }
 
 .featured-product-card{
