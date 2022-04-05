@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furn Easy- Products</title>
+    <script src="https://kit.fontawesome.com/3403aa9b31.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://easyui-cl.netlify.app/style.css"/>
+    <link rel="stylesheet" href="/products.css">
+</head>
+<body>
+    <div class="page-layout">
+        <nav class="nav-bar">
+            <div class="nav-bar-logo"><a class="logo" href="/index.html">FURN-EASY</a></div>
+            <div class="navbar-search">
+                <input class="navbar-searchbar" type="text" placeholder="Search for a product..."/>
+                <a href="#" ><i class="fa-solid fa-magnifying-glass"></i></a>
+            </div>
+            <div class="nav-bar-buttons">
+                <a href="/login.html"><button class="login">Login</button></a>
+                <a href="/wishlist.html" class="nav-bar-icon badge-container"><i class="fa fa-heart-o" aria-hidden="true"></i><span class="shopping-badge">0</span></a>
+                <a href="/cart.html" class="nav-bar-icon badge-container"><i class="fa fa-cart-plus" aria-hidden="true"></i><span class="shopping-badge">0</span></a>
+                <a  href="#" class="nav-bar-icon"><i class="fa fa-user" aria-hidden="true"></i></a>
+            </div>
+        </nav>
+        <main class="main">
+            <aside class="filter flex flex-column">
+                <div class="filter-title-section flex flex-space-between">
+                    <div class="title section-title">Filters</div>
+                    <button class="btn-link clear-filter-button">Clear</button>
+                </div>
+                <div class="category-section">
+                    <div class="title">Category</div>
+                    <ul class="list-none">
+                        <li class="filter-item flex"><input type="checkbox" id="category-checkbox"><label for="category-checkbox">Sofa</label></li>
+                        <li class="filter-item flex"><input type="checkbox" id="category-checkbox"><label for="category-checkbox">Bed</label></li>
+                    </ul>
+                </div>
+                <div class="rating-section">
+                    <div class="title">Rating</div>
+                    <ul class="list-none">
+                        <li class="filter-item flex"><input type="radio" name="rating-radio" id="5-stars"><label for="5-stars">5 Stars</label></li>
+                        <li class="filter-item flex"><input type="radio" name="rating-radio" id="4-stars"><label for="4-stars">4 stars</label></li>
+                        <li class="filter-item flex"><input type="radio" name="rating-radio" id="3-stars"><label for="3-stars">3 Stars</label></li>
+                        <li class="filter-item flex"><input type="radio" name="rating-radio" id="2-stars"><label for="2-stars">2 stars</label></li>
+                        <li class="filter-item flex"><input type="radio" name="rating-radio" id="1-stars"><label for="1-stars">1 Stars</label></li>
+                    </ul>
+                </div>
+                <div class="sort-section">
+                    <div class="title">Sort By</div>
+                    <ul class="list-none">
+                        <li class="filter-item flex"><input type="radio" name="sort-radio" id="high-to-low"><label for="high-to-low">Price - High to Low</label></li>
+                        <li class="filter-item flex"><input type="radio" name="sort-radio" id="low-to-high"><label for="low-to-high">Price - Low to High</label></li>
+                    </ul>
+                </div>
+            </aside>
+            <section class="main-body flex">
+                <div class="product-section flex flex-wrap">
+                    <div class="card vertical-card">
+                        <div class="img"
+                            style="background-image: url('assets/sofa.jpeg')" alt="sofa">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <p class="card-title">Sofa</p>
+                                <p class="card-sub-title">From Furn-Easy</p>
+                            </div>
+                            <div class="card-price-text">Rs. 5000</div>
+                            <div class="card-footer flex">
+                                <div class="card-footer-buttons">
+                                    <button class="btn btn-hover cart-button">Add to Cart</button>
+                                    <button class="btn btn-hover wishlist-button">Add to Wishlist</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card vertical-card">
+                        <div class="img img-url"
+                            style="background-image: url('assets/dining.jpeg')" alt="dining">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <p class="card-title">Dining Set</p>
+                                <p class="card-sub-title">From Furn-Easy</p>
+                            </div>
+                            <div class="card-price-text">Rs. 10000</div>
+                            <div class="card-footer flex">
+                                <div class="card-footer-buttons">
+                                    <button class="btn btn-hover cart-button">Add to Cart</button>
+                                    <button class="btn btn-hover wishlist-button">Add to Wishlist</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card vertical-card">
+                        <div class="img"
+                            style="background-image: url('assets/bed.png')" alt="bed">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <p class="card-title">Bed</p>
+                                <p class="card-sub-title">From Furn-Easy</p>
+                            </div>
+                            <div class="card-price-text">Rs. 13000</div>
+                            <div class="card-footer flex">
+                                <div class="card-footer-buttons">
+                                    <button class="btn btn-hover go-to-cart-button">Go to Cart</button>
+                                    <button class="btn btn-hover wishlist-button">Add to Wishlist</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card vertical-card">
+                        <div class="img img-url"
+                            style="background-image: url('assets/table.jpg')" alt="dining">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <p class="card-title">Table</p>
+                                <p class="card-sub-title">From Furn-Easy</p>
+                            </div>
+                            <div class="card-price-text">Rs. 4000</div>
+                            <div class="card-footer flex">
+                                <div class="card-footer-buttons">
+                                    <button class="btn btn-hover cart-button">Add to Cart</button>
+                                    <button class="btn btn-hover remove-from-wishlist-button">Remove from Wishlist</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card vertical-card">
+                        <div class="img"
+                            style="background-image: url('assets/sofa.jpeg')" alt="sofa">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <p class="card-title">Sofa</p>
+                                <p class="card-sub-title">From Furn-Easy</p>
+                            </div>
+                            <div class="card-price-text">Rs. 5000</div>
+                            <div class="card-footer flex">
+                                <div class="card-footer-buttons">
+                                    <button class="btn btn-hover cart-button">Add to Cart</button>
+                                    <button class="btn btn-hover wishlist-button">Add to Wishlist</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card vertical-card">
+                        <div class="img"
+                            style="background-image: url('assets/sofa.jpeg')" alt="sofa">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <p class="card-title">Sofa</p>
+                                <p class="card-sub-title">From Furn-Easy</p>
+                            </div>
+                            <div class="card-price-text">Rs. 5000</div>
+                            <div class="card-footer flex">
+                                <div class="card-footer-buttons">
+                                    <button class="btn btn-hover cart-button">Add to Cart</button>
+                                    <button class="btn btn-hover wishlist-button">Add to Wishlist</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card vertical-card">
+                        <div class="img"
+                            style="background-image: url('assets/sofa.jpeg')" alt="sofa">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <p class="card-title">Sofa</p>
+                                <p class="card-sub-title">From Furn-Easy</p>
+                            </div>
+                            <div class="card-price-text">Rs. 5000</div>
+                            <div class="card-footer flex">
+                                <div class="card-footer-buttons">
+                                    <button class="btn btn-hover cart-button">Add to Cart</button>
+                                    <button class="btn btn-hover wishlist-button">Add to Wishlist</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card vertical-card">
+                        <div class="img"
+                            style="background-image: url('assets/sofa.jpeg')" alt="sofa">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <p class="card-title">Sofa</p>
+                                <p class="card-sub-title">From Furn-Easy</p>
+                            </div>
+                            <div class="card-price-text">Rs. 5000</div>
+                            <div class="card-footer flex">
+                                <div class="card-footer-buttons">
+                                    <button class="btn btn-hover cart-button">Add to Cart</button>
+                                    <button class="btn btn-hover wishlist-button">Add to Wishlist</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card vertical-card">
+                        <div class="img"
+                            style="background-image: url('assets/sofa.jpeg')" alt="sofa">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <p class="card-title">Sofa</p>
+                                <p class="card-sub-title">From Furn-Easy</p>
+                            </div>
+                            <div class="card-price-text">Rs. 5000</div>
+                            <div class="card-footer flex">
+                                <div class="card-footer-buttons">
+                                    <button class="btn btn-hover cart-button">Add to Cart</button>
+                                    <button class="btn btn-hover wishlist-button">Add to Wishlist</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card vertical-card">
+                        <div class="img"
+                            style="background-image: url('assets/sofa.jpeg')" alt="sofa">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <p class="card-title">Sofa</p>
+                                <p class="card-sub-title">From Furn-Easy</p>
+                            </div>
+                            <div class="card-price-text">Rs. 5000</div>
+                            <div class="card-footer flex">
+                                <div class="card-footer-buttons">
+                                    <button class="btn btn-hover cart-button">Add to Cart</button>
+                                    <button class="btn btn-hover wishlist-button">Add to Wishlist</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+            </section>
+        </main>
+    </div>
+</body>
+</html>
