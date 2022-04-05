@@ -9,7 +9,7 @@
 .filter{
     gap: 2rem;
     padding: 1rem;
-    background-color: var(--bg-color);
+    background-color: var(--off-white);
 }
 
 .title {
@@ -34,7 +34,6 @@
 }
 
 .main-body {
-    background-color: var(--off-white);
     padding: 1.5rem;
 }
 
