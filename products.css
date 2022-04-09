@@ -1,5 +1,4 @@
 @import url(/global-styles.css);
-@import url(/styles.css);
 .main {
     display: grid;
     grid-template-columns: 1fr 4fr;
